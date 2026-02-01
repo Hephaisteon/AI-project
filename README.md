@@ -29,22 +29,28 @@ pip install -r requirements.txt
 python main.py
 
 
-## Regarding local_doc_search Node
-This project supports optional local document retrieval using FAISS vectorstores built from PDF documentation.
-The vectorstores are not included in this repository to avoid redistributing third-party or proprietary materials.
-The agent is designed to also operate without local vectorstores:
-- If no vectorstores are present:
-  - the local document search step is skipped automatically
-  - the agent continues using web-based retrieval and fallback strategies
+## NOTE: 
+- Regarding local_doc_search Node
+  This project supports optional local document retrieval using FAISS vectorstores built from PDF documentation.
+  The vectorstores are not included in this repository to avoid redistributing third-party or proprietary materials.
+  The agent is designed to also operate without local vectorstores:
+  - If no vectorstores are present:
+    - the local document search step is skipped automatically
+    - the agent continues using web-based retrieval and fallback strategies
+  
+  Using Local Document Retrieval (Optional)
+  
+  To enable PDF-based retrieval:
+  - Provide your own PDF sources (e.g. public documentation)
+  - Update the paths in pdf_vector_storage.py
+  - Run the indexing step once:
+  
+  python pdf_vector_storage.py
+  
+  After indexing, the agent will automatically incorporate local document context into its reasoning flow.
 
-Using Local Document Retrieval (Optional)
-
-To enable PDF-based retrieval:
-- Provide your own PDF sources (e.g. public documentation)
-- Update the paths in pdf_vector_storage.py
-- Run the indexing step once:
-
-python pdf_vector_storage.py
-
-After indexing, the agent will automatically incorporate local document context into its reasoning flow.
+- Regarding safe_file node:
+  The agent includes a `save_file` node that saves the final answer,
+  source references, and agent execution trace to a local text file. This allows to inspect the agent’s reasoning steps.
+  The txt file will be stored in the project environment.
 
