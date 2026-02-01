@@ -23,6 +23,28 @@ The research agent is implemented as a LangGraph-based agentic workflow where ea
 <img width="487" height="677" alt="architecture" src="https://github.com/user-attachments/assets/20de7b4d-c3e5-4788-97db-0f88f53e7e08" />
 
 
+
 ## How to run
 pip install -r requirements.txt
 python main.py
+
+
+## Regarding Semantic PDF Search
+This project supports optional local document retrieval using FAISS vectorstores built from PDF documentation.
+The vectorstores are not included in this repository to avoid redistributing third-party or proprietary materials.
+The agent is designed to also operate without local vectorstores:
+- If no vectorstores are present:
+  - the local document search step is skipped automatically
+  - the agent continues using web-based retrieval and fallback strategies
+
+Using Local Document Retrieval (Optional)
+
+To enable PDF-based retrieval:
+- Provide your own PDF sources (e.g. public documentation)
+- Update the paths in pdf_vector_storage.py
+- Run the indexing step once:
+
+python pdf_vector_storage.py
+
+After indexing, the agent will automatically incorporate local document context into its reasoning flow.
+
