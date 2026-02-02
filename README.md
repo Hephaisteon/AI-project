@@ -48,15 +48,16 @@ could support engineers by:
 - Iteratively refining answers using critique-based validation
 - Providing confidence-aware responses and safe fallbacks
 
-
-**Important note**  
-This repository is a public prototype and does **not** use any internal documentation sources.
-Local document retrieval is demonstrated using publicly available PDFs as a stand-in for real documentation sources.
-
 In a production environment, the local document search node could be replaced by:
 - An official documentation API
 - A secured internal knowledge base
 - Enterprise search services
+
+
+
+***Important note**  
+This repository is a public prototype and does **not** use any internal documentation sources.
+Local document retrieval is demonstrated using publicly available PDFs as a stand-in for real documentation sources.
 
 
 
@@ -70,7 +71,7 @@ python main.py
 
 
 
-## Further notes: 
+## Further notes for running this agent: 
 
 - local_doc_search node
   
