@@ -1,0 +1,17 @@
+faiss-cpu==1.13.0
+langchain==0.3.27
+langchain-community==0.3.31
+langchain-core==0.3.83
+langchain-openai==0.3.35
+langchain-text-splitters==0.3.11
+langgraph==0.6.11
+langgraph-checkpoint==2.1.2
+langgraph-prebuilt==0.6.5
+langgraph-sdk==0.2.9
+openai==2.15.0
+pypdf==6.6.0
+python-dotenv==1.2.1
+tavily==1.1.0
+tavily-python==0.7.19
+typing_extensions==4.15.0
+
