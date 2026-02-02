@@ -71,7 +71,7 @@ python main.py
 
 
 
-## Further notes for running this agent: 
+## Further notes on running this agent: 
 
 - local_doc_search node
   
