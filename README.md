@@ -16,6 +16,7 @@ It explores
 - Multi-agent architecture
 
 
+
 ## Agent architecture:
 
 The system consists of two agents: 
@@ -27,6 +28,7 @@ The system consists of two agents:
 Graph Visual:
 
 <img width="487" height="677" alt="architecture" src="https://github.com/user-attachments/assets/20de7b4d-c3e5-4788-97db-0f88f53e7e08" />
+
 
 
 
@@ -67,7 +69,9 @@ python main.py
 ```
 
 
+
 ## Further notes: 
+
 - local_doc_search node
   
   The first step of this agent is to collect information through local document retrieval using FAISS vectorstores built from PDF documentation.
@@ -88,6 +92,7 @@ python main.py
   python pdf_vector_storage.py
   ```
   After indexing, the agent will automatically incorporate local document context into its workflow.
+
 
 - safe_file node
 
