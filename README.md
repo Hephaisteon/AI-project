@@ -25,8 +25,8 @@ The research agent is implemented as a LangGraph-based agentic workflow where ea
 
 
 ## How to run
-pip install -r requirements.txt
-python main.py
+- pip install -r requirements.txt
+- python main.py
 
 
 ## NOTE: 
