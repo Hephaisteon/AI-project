@@ -29,9 +29,10 @@ The system consists of two agents:
 
 
 ## How to run
-- pip install -r requirements.txt
-- python main.py
-
+```
+pip install -r requirements.txt
+python main.py
+```
 
 ## NOTE: 
 - local_doc_search node
@@ -49,9 +50,9 @@ The system consists of two agents:
   - Provide your own PDF sources (e.g. public documentation)
   - Update the paths in pdf_vector_storage.py
   - Run the indexing step once:
-  
+  ```
   python pdf_vector_storage.py
-  
+  ```
   After indexing, the agent will automatically incorporate local document context into its reasoning flow.
 
 - safe_file node
