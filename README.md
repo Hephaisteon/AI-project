@@ -30,7 +30,8 @@ python main.py
 
 
 ## NOTE: 
-- Regarding local_doc_search Node
+- local_doc_search node
+  
   This project supports optional local document retrieval using FAISS vectorstores built from PDF documentation.
   The vectorstores are not included in this repository to avoid redistributing third-party or proprietary materials.
   The agent is designed to also operate without local vectorstores:
@@ -49,7 +50,8 @@ python main.py
   
   After indexing, the agent will automatically incorporate local document context into its reasoning flow.
 
-- Regarding safe_file node:
+- safe_file node
+
   The agent includes a `save_file` node that saves the final answer,
   source references, and agent execution trace to a local text file. This allows to inspect the agent’s reasoning steps.
   The txt file will be stored in the project environment.
