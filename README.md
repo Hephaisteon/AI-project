@@ -32,10 +32,10 @@ Graph Visual:
 
 ## Motivation & Real-World Context
 
-Modern PLM platforms such as Dassault Systèmes 3DEXPERIENCE are extremely powerful, 
-but their documentation is large, fragmented, and difficult to navigate efficiently.
-
-In large organizations, users often face challenges  such as:
+In large organizations, users often face challenges of identifying up-to-date and correct documentation. 
+This applies to *internal documentation* as well as to *external documentation* of software applications the users work with on a daily basis. 
+One example for this are modern PLM platforms such as Dassault Systèmes 3DEXPERIENCE. Even though PLM platforms are extremely powerful, 
+their documentation is very large and they often lack conversational or guided access to platform knowledge, leading to the following issues when searching for context:
 - Hundreds of search results for a single topic
 - Difficulty identifying the correct or relevant documentation
 - Lack of conversational or guided access to platform knowledge
@@ -46,6 +46,7 @@ could support engineers by:
 - Iteratively refining answers using critique-based validation
 - Providing confidence-aware responses and safe fallbacks
 
+
 **Important note**  
 This repository is a public prototype and does **not** use any internal documentation sources.
 Local document retrieval is demonstrated using publicly available PDFs as a stand-in for real documentation sources.
@@ -53,11 +54,9 @@ Local document retrieval is demonstrated using publicly available PDFs as a stan
 In a production environment, the local document search node could be replaced by:
 - An official documentation API
 - A secured internal knowledge base
-- Enterprise search or indexing services
+- Enterprise search services
 
-**Important note**  
-This repository is a public prototype and does **not** use any internal documentation sources  
-Local document retrieval is demonstrated using publicly available PDFs as a stand-in for real documentation sources.
+
 
 
 
