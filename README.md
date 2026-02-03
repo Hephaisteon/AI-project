@@ -74,15 +74,11 @@ python main.py
 - local_doc_search node
   
   The first step of this agent is to collect information through local document retrieval using FAISS vectorstores built from PDF documentation.
-  As described in the *Motivation & Real-World Context* section, this is only a placeholder for an official documentation API
+  As described in the *Motivation & Real-World Context* section, this is only a placeholder for an official documentation API.
 
-  Therefore, the agent is designed to also operate without locally stored vectorstores:
-  - If no vectorstores are present:
-    - the local document search step is skipped automatically
-    - the agent continues using web-based retrieval
+  Therefore, the agent is designed to also operate without locally stored vectorstores. If no vectorstores are present, the local document search step is skipped         automatically and the agent continues using web-based retrieval
   
-
-  If desired, Llcal document retrieval can be activated as follows: (Optional)
+  If desired, Local document retrieval can be activated as follows (optional):
   - Provide your own PDF sources (e.g. public documentation)
   - Update the paths in pdf_vector_storage.py
   - Run the indexing step once:
