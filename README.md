@@ -34,12 +34,12 @@ Graph Visual:
 
 ## Motivation & Real-World Context
 
-In large organizations, users often face challenges of identifying up-to-date and correct documentation. 
-This not only applies to *internal documentation* but also to *external documentation* of software applications the users work with on a daily basis. 
+In large organizations, employees often face challenges of identifying up-to-date and correct documentation. 
+This does not only apply to *internal documentation* but also to *external documentation* of software applications employees work with on a daily basis. 
 One example for this are modern PLM platforms such as Dassault Systèmes 3DEXPERIENCE. Even though PLM platforms are extremely powerful, 
 their documentation is very large and they often lack conversational or guided access to platform knowledge, leading to the following issues when searching for context:
 - Hundreds of search results for a single topic
-- Difficulty identifying the correct or relevant documentation
+- Difficulties in identifying the correct or relevant information
 - Lack of conversational or guided access to platform knowledge
 
 This project was inspired by these challenges and explores how an agentic AI system 
@@ -76,7 +76,7 @@ python main.py
   The first step of this agent is to collect information through local document retrieval using FAISS vectorstores built from PDF documentation.
   As described in the *Motivation & Real-World Context* section, this is only a placeholder for an official documentation API.
 
-  Therefore, the agent is designed to also operate without locally stored vectorstores. If no vectorstores are present, the local document search step is skipped         automatically and the agent continues using web-based retrieval
+  Therefore, the agent is designed to also operate without locally stored vectorstores. If no vectorstores are present, the local document search step is skipped         automatically and the agent continues using web-based retrieval.
   
   If desired, Local document retrieval can be activated as follows (optional):
   - Provide your own PDF sources (e.g. public documentation)
@@ -92,6 +92,6 @@ python main.py
 - safe_file node
 
   The agent includes a `save_file` node that saves the final answer,
-  source references, and agent execution trace to a local text file. This allows to inspect the agent’s reasoning steps.
-  The txt file will be stored in the project environment.
+  source references, and agent execution trace to a local text file. This allows to inspect the reasoning steps of the agent.
+  The txt file is stored in the project environment.
 
